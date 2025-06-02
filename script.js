@@ -1,14 +1,14 @@
 
 // Typing Animation
 const typingText = document.getElementById('typing-text');
-const textToType = 'Welcome to My Portfolio';
+const textToType = 'Hi I am Daniel';
 let index = 0;
 
 function type() {
     if (index < textToType.length) {
         typingText.textContent += textToType[index];
         index++;
-        setTimeout(type, 100);
+        setTimeout(type, 150);
     }
 }
 window.onload = type;
