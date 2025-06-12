@@ -44,3 +44,5 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
+
+console.log('Script loaded successfully!');

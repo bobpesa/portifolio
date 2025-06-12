@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- particles.js and typed.js here is okay -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Creative Portfolio</title>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <div class="container">
         <nav class="navbar">
             <div class="logo">AsiliDev</div>
@@ -20,13 +25,13 @@
             </div>
         </nav>
 
+
         <section id="home">
-            <div class="typing-text" id="typing-text"></div>
-            <div class="scramble-container" id="scramble-text"></div>
-            <p class="intro-text">
-                Crafting modern, responsive, and engaging web experiences with a passion for design and innovation.
-            </p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <div class="hero-text">
+                <span id="typed-intro"></span><br>
+                <span id="typed-loop"></span>
+            </div>
+            <a href="#projects" id="cta-button" class="cta-button">View My Work</a>
         </section>
 
         <section id="about">
@@ -80,7 +85,15 @@
     <footer>
         <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- Load particles.js config -->
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.js loaded');
+        });
+    </script>
+
+    <!-- custom scripts -->
+    <script src="main.js"></script>
 </body>
 
 </html>
