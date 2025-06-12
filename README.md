@@ -13,3 +13,16 @@ Welcome to my personal portfolio website — a creative and professional space t
 - **Stylish UI Elements:** Custom-styled buttons, project cards, and hover animations.
 - **Typed Text with Color Highlights:** Specific keywords in typing animation appear in different colors for emphasis.
 - **Inter & Fira Code Fonts:** Carefully chosen fonts for readability and a developer-friendly aesthetic.
+
+---
+
+## 🛠️ Built With
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+- **Typed.js** – for typing effect
+- **Google Fonts:** Inter & Fira Code
+- **Particles.js** – for animated background
+
+---
