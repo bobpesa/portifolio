@@ -259,11 +259,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .typing-text {
+    .typed-intro {
         font-size: 2rem;
     }
 
-    .scramble {
+    .typed-loop {
         font-size: 1.2rem;
     }
 
@@ -280,11 +280,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .typing-text {
+    .typed-intro {
         font-size: 1.5rem;
     }
 
-    .scramble {
+    .typed-loop {
         font-size: 1rem;
     }
 
@@ -298,6 +298,8 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+
 
 #particles-js {
     position: fixed;
