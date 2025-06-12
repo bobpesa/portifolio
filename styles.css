@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+:root {
+    --primary-color: #1e293b;
+    /* Deep Slate Blue */
+    --secondary-color: #3b82f6;
+    /* Vivid Blue */
+    --background-color: #0f172a;
+    /* Dark Navy */
+    --text-color: #e2e8f0;
+    /* Soft Light Gray */
+    --accent-color: #9333ea;
+    /* Vibrant Purple */
+    --after-color: #1d4ed8;
+    /* Button Hover Blue */
+    --anime-color: #00BFFF;
+    /* Light Blue for animation */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    /* Shadow color */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,18 +56,18 @@ html {
 
 
 .navbar.scrolled {
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: var(--shadow-color);
     backdrop-filter: blur(10px);
 }
 
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: var(--anime-color)
 }
 
 .nav-links a {
-    color: #e2e8f0;
+    color: var(--anime-color);
     text-decoration: none;
     margin-left: 1.5rem;
     font-size: 1rem;
@@ -56,7 +75,7 @@ html {
 }
 
 .nav-links a:hover {
-    color: #3b82f6;
+    color: var(--text-color);
 }
 
 
@@ -72,8 +91,8 @@ html {
 }
 
 .hero-text {
-    color: white;
-    font-size: 2rem;
+    color: var(--accent-color);
+    font-size: 2.5rem;
     text-align: center;
     max-width: 800px;
 }
@@ -85,7 +104,7 @@ html {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: #ffffff;
+    color: var(--text-color);
     /* Or your primary text color */
     margin-bottom: 10px;
     display: block;
@@ -109,7 +128,7 @@ html {
 
 /* Base button style */
 #cta-button {
-    background-color: #007BFF;
+    background-color: var(--secondary-color);
     color: white;
     padding: 12px 28px;
     margin-top: 20px;
@@ -123,6 +142,7 @@ html {
     opacity: 0;
     transform: translateY(10px);
     pointer-events: none;
+    text-decoration: none;
 }
 
 /* Show the button with fade and slide */
@@ -134,7 +154,7 @@ html {
 
 /* Hover effect */
 #cta-button:hover {
-    background-color: #0056b3;
+    background-color: var(--after-color);
     /* Darker blue */
     box-shadow: 0 6px 14px rgba(0, 86, 179, 0.6);
     transform: translateY(-2px);
@@ -259,11 +279,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .typed-intro {
+    #typed-intro {
         font-size: 2rem;
     }
 
-    .typed-loop {
+    #typed-loop {
         font-size: 1.2rem;
     }
 
@@ -280,12 +300,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .typed-intro {
-        font-size: 1.5rem;
+    #typed-intro {
+        font-size: 0.9em;
+        margin-top: 2rem;
     }
 
-    .typed-loop {
-        font-size: 1rem;
+    #typed-loop {
+        font-size: 0.8em;
     }
 
     .navbar {
